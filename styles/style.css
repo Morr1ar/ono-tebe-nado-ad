@@ -1,1 +1,303 @@
-/* место для вашего кода */
+.header {
+    display: grid;
+    grid-template-columns: 1fr min-content 1fr;
+    align-items: center;
+    padding: 92px 50px 96px 50px;
+}
+
+.header__menu {
+
+}
+
+.header__links-list {
+    display: flex;
+    gap: 33px;
+    list-style: circle;
+    font-size: 18px;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+.header__logo {
+    display: flex;
+}
+
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+}
+
+.address,
+.address * {
+    font-size: 18px;
+    line-height: 25px; /* подобрал на глаз межстрочный интервал */
+}
+
+.header__address {
+    max-width: 240px;
+    justify-self: end;
+}
+
+.underline__bottom {
+    text-decoration: none;
+    border-bottom: 1px solid currentColor; /* Подчеркивание */
+    padding-bottom: 1px; /* Отступ между текстом и линией */
+}
+
+.main {
+    
+}
+
+.cover {
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 757px;
+    position: relative;
+    color: white;
+    padding: 165px 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0 0 0/0.6);
+}
+
+.cover__title,
+.cover__description {
+    /*position: relative;/*не помню для чего*/
+    z-index: 1;
+}
+
+.cover__title {
+    text-transform: uppercase;
+    margin-bottom: auto;
+}
+
+.aligned-text {
+    display: block;
+    height: 115px;
+    font-size: 100px;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 30px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0;
+}
+
+.aligned-text_center {
+    text-align: center;
+    margin: 20px 0;
+    margin-left: 30px; /* компенсирует letter-spacing */
+}
+
+.aligned-text_right {
+    text-align: right;
+}
+
+.cover__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.cover__description-text {
+    font-size: 22px;
+    text-transform: uppercase;
+    word-spacing: 19px; /*нужно подобрать нужное возможно нужны классы letter-spacing-extended и no-letter-spacing*/
+}
+
+.bet-button {
+    background: transparent;
+    border: 1px solid white;
+    padding: 12px 32px 11px 31px;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.lots {
+    margin: 180px 24px 120px 24px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lots__heading {
+    margin-left: 40px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.lots__card-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.lots__card-list-item {
+    /*flex-basis: 334px;не уверен*/
+    width: 334px;
+    min-height: 596px;
+}
+
+.card-link,
+.card {
+    height: 100%;
+}
+
+.card-link {
+    text-decoration: none; /*сбрасывает подчеркивание у карточек*/
+}
+
+.card_type_film {
+    background: url(/images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background: url(/images/card-lot-03.jpg);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    color: white;
+
+    padding: 48px 40px;
+    justify-content: space-between;
+}
+
+.card__title,
+.card__text {
+    z-index: 1;
+}
+
+.card__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.card__text {
+    
+}
+
+.lots__look-more-link {
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.about {
+    margin: 120px 24px 180px 24px;
+
+    padding-top: 35px;
+}
+
+.about__column {
+    display: grid;
+    grid-template-columns: 334px 1fr;
+
+}
+
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+    border-radius: 50%; /*Делает блок круглым*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    justify-self: center;
+
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.about__content {
+    padding-left: 25px;
+}
+
+.about__title {
+    text-transform: uppercase;
+    margin-top: 101px;
+    margin-bottom: 100px;
+    font-size: 40px;
+}
+
+.about__text {
+    line-height: 24px;
+}
+
+.about__text-1 {
+    margin-bottom: 24px;
+}
+
+.footer {
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 50px;
+}
+
+.footer__address {
+    max-width: 264.57px;
+}
+
+.footer__menu {
+    justify-self: center;
+}
+
+.footer__menu-list {
+    font-size: 18px;
+}
+
+.footer__menu-list-item {
+    text-align: center;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+    justify-self: end;
+}
+
+.footer__social-list-item {
+    width: 48px;
+    height: 48px;
+}
