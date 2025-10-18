@@ -5,10 +5,6 @@
     padding: 92px 50px 96px 50px;
 }
 
-.header__menu {
-
-}
-
 .header__links-list {
     display: flex;
     gap: 33px;
@@ -48,10 +44,6 @@
     text-decoration: none;
     border-bottom: 1px solid currentColor; /* Подчеркивание */
     padding-bottom: 1px; /* Отступ между текстом и линией */
-}
-
-.main {
-    
 }
 
 .cover {
@@ -201,10 +193,6 @@
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: underline;
-}
-
-.card__text {
-    
 }
 
 .lots__look-more-link {
